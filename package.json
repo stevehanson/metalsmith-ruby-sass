@@ -1,25 +1,25 @@
 {
-  "name": "metalsmith-sass",
-  "version": "0.2.1",
-  "description": "Sass plugin for Metalsmith.",
+  "name": "metalsmith-ruby-sass",
+  "version": "0.1.1",
+  "description": "Ruby Sass plugin for Metalsmith. There are issues with the way libsass (which is used by node-sass) handles @extends, which makes it necessary for some to use Ruby sass",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --reporter spec test/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/stevenschobert/metalsmith-sass.git"
+    "url": "git://github.com/stevehanson/metalsmith-ruby-sass.git"
   },
   "keywords": [
     "metalsmith",
     "sass"
   ],
-  "author": "Steven Schobert <spschobert@gmail.com>",
+  "author": "Steve Hanson <s.hanson5@gmail.com@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stevenschobert/metalsmith-sass/issues"
+    "url": "https://github.com/stevehanson/metalsmith-ruby-sass/issues"
   },
-  "homepage": "https://github.com/stevenschobert/metalsmith-sass",
+  "homepage": "https://github.com/stevehanson/metalsmith-ruby-sass",
   "devDependencies": {
     "metalsmith": "^0.8.0",
     "mocha": "^1.20.1",
@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "async": "^0.9.0",
-    "node-sass": "^0.8.1"
+    "which": "^1.0.5",
+    "win-spawn": "^2.0.0"
   }
 }
