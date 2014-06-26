@@ -24,7 +24,7 @@
           .source('fixtures/basic/src')
           .destination('fixtures/basic/build')
           .use(sass({
-            outputStyle: 'expanded'
+            outputStyle: 'nested'
           }))
           .build(function (err) {
             if (err) {
@@ -40,7 +40,7 @@
           .source('fixtures/partials/src')
           .destination('fixtures/partials/build')
           .use(sass({
-            outputStyle: 'expanded'
+            outputStyle: 'nested'
           }))
           .build(function (err) {
             if (err) {
@@ -58,7 +58,7 @@
           .source('fixtures/outputDir/src')
           .destination('fixtures/outputDir/build')
           .use(sass({
-            outputStyle: 'expanded',
+            outputStyle: 'nested',
             outputDir: 'nested/'
           }))
           .build(function (err) {
